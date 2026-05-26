@@ -60,9 +60,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Introduction and motivations}
+\section{Introduction and motivation}
 
-\begin{frame}{Motivations}\label{Motivations}
+\begin{frame}{Motivation}\label{Motivations}
 
 \begin{mainbox}{Questions}
 \begin{itemize}
@@ -115,7 +115,7 @@
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{figure/FP_EU_detail_v2.PNG}
-    \caption{Share of household contract uptake in Europe \cite{ACER2024} \hyperlink{options1}{\beamergotobutton{Options}}} 
+    \caption{Share of household contract uptake in Europe \cite{ACER2024}} 
     \label{fig:FP_EU_detail}
 \end{figure}
 
@@ -128,15 +128,21 @@
 
 
 
-\begin{frame}{The set up}\label{FirstCont}
+\begin{frame}{The set up}
 
 
 \begin{itemize}
 
 \item Provide a \boldrblue{stylized theoretical framework} where \vfill
 \begin{itemize}
-    \item A set of firms offers a fixed menu of contracts: \boldrblue{a fixed-price (FP) and a dynamic-price (RTP) contract} \vfill
-    \item Consumer chooses a contract: \boldrblue{commitment on price profile} \vfill
+    \item A set of firms offers a fixed menu of contracts: 
+    \begin{itemize}
+        \item \boldrblue{a fixed-price (FP) and a dynamic-price (RTP) contract}
+    \end{itemize} \vfill
+    \item Consumer chooses a contract
+    \begin{itemize}
+        \item \boldrblue{commitment on price profile}
+    \end{itemize} \vfill
     \item Consumers consume over \boldrblue{two periods}, and in each period different \boldrblue{willingness-to-pay} and \boldrblue{marginal production cost}.
     \end{itemize}
 \end{itemize}
@@ -232,7 +238,11 @@
 
 \begin{itemize}
 
-\item \boldrblue{Optimal demand for contracts}: Higher willingness to pay during low-price periods $\rightarrow$ dynamic contract. Opposite for the FP contract.
+\item \boldrblue{Optimal demand for contracts} \vfill
+
+\begin{itemize}
+    \item Higher willingness to pay during low-price periods $\rightarrow$ dynamic contract. Opposite for the FP contract.
+\end{itemize}
 
 \vfill
 
@@ -251,7 +261,7 @@
 \item \boldrblue{Advantageous selection} can be realized with public funds/taxes: \vfill
 
     \begin{center}
-    $W$(\textcolor{blue}{Dynamic} +  \textcolor{red}{Fixed-Price})  { \textbf{  < }} $W$( \textcolor{red}{Fixed-Price})
+    W(\textcolor{blue}{Dynamic Private} +  \textcolor{red}{Fixed-Price Public})  { \textbf{  < }} W( \textcolor{red}{Fixed-Price Public})
    \end{center}
 
 \vfill
@@ -267,7 +277,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Contributions}\label{FirstCont}
+\begin{frame}{Contributions}
 
 \begin{itemize}
 
@@ -365,7 +375,7 @@
 \begin{itemize}
     \item We assume a set of retailers that purchase at no additional cost on the wholesale market at \boldrblue{price} $c_t$. \vfill
     \begin{itemize}
-        \item We assume w.l.o.g. that $c_1 < c_2$ and $\mathbf{c}:= (c_1,c_2)$ 
+        \item We assume w.l.o.g. that $c_1 < c_2$ 
     \end{itemize}
     
 
@@ -410,7 +420,7 @@
 \item The \textit{participation set} for contract $k$ given an optimal profile $\textbf{x}^\ast$ is:
 
 \begin{equation*} \label{eq:active_set_general}
-    \mathcal{S}^k = \left\{ \mathbf{v} \in V : \mathbf{x}^*(\mathbf{v},k) \neq \mathbf{0} \quad \text{and} \quad k \in \arg\max_{j \in \mathcal{K}} U(\mathbf{v}, j) \right\}.
+    \mathcal{S}^k = \left\{ \mathbf{v} \in V : \mathbf{x}^*(\mathbf{v},k) \neq \mathbf{0} \quad \text{and} \quad k \in \arg\max_{j \in \{r,s\}} U(\mathbf{v}, j) \right\}.
 \end{equation*}
 
 \vfill
