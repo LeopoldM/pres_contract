@@ -150,6 +150,8 @@
 \vfill
 \begin{itemize}
     \item \boldrblue{A selection market}: identity matters as cost depends on consumer types and contract choices.
+        \vfill
+    \item Consumers are \boldrblue{risk-neutral and fully rational} 
 \end{itemize}
 
 
@@ -177,7 +179,7 @@
       below left=0.55cm and 0.3cm of banner.south]
   (pubFirm)
   {\textcolor{pubBlue!15!black}{\textbf{\normalsize Public Firm}}\\[1pt]
-   \textcolor{notegray}{\scriptsize regulated monopoly}};
+   \textcolor{notegray}{\scriptsize regulated incumbent}};
  
 \node[contractbox=fixOrange, minimum width=4.2cm,
       below=0.45cm of pubFirm]
@@ -223,7 +225,7 @@
 
 \small
 \begin{itemize}
-    \item The public firm as a Universal Service Obligation, see Directive (EU) 2019/944
+    \item The public firm as a Universal Service Obligation provider, see Directive (EU) 2019/944
 \end{itemize}
 
 \end{frame}
@@ -251,19 +253,18 @@
 \vfill
 
 \begin{itemize}
-    \item \boldrblue{Impossibility result}: FP contracts is not sustained at the equilibrium.     \vfill
+    \item \boldrblue{Impossibility result}: FP contracts are not sustained at the equilibrium.     \vfill
     \begin{itemize}
     \item The option of a dynamic price contract unravels the FP market.  \vfill
-    \item Hold for private firms and a self-financing public firm.
+    \item Holds for private firms and a self-financing public firm.
     \end{itemize}
     \vfill
 
-\item \boldrblue{Advantageous selection} can be realized with public funds/taxes: \vfill
+\item \boldrblue{Adverse selection}: public funds/taxes sustain the FP contract, yet: \vfill
 
     \begin{center}
     W(\textcolor{blue}{Dynamic Private} +  \textcolor{red}{Fixed-Price Public})  { \textbf{  < }} W( \textcolor{red}{Fixed-Price Public})
    \end{center}
-
 \vfill
 
 \item Leakage of consumers to the private firms $\rightarrow$ low equilibrium fixed-price.
@@ -281,7 +282,7 @@
 
 \begin{itemize}
 
-\item  Consumers differ in \boldrblue{willingness-to-pay} across consumption period.
+\item  Consumers differ in \boldrblue{willingness-to-pay} across consumption periods.
 
 \vfill
 
@@ -290,7 +291,7 @@
  
  \vfill
  
- \item Extend single type consumers model. \cite{joskow2006retail,Astier2021,ancel2025tariffs}
+ \item Extend single-type consumer models. \cite{joskow2006retail,Astier2021,ancel2025tariffs}
     \end{itemize}
 
 \vfill
@@ -304,7 +305,7 @@
 
 \vfill
 
-        \item Adverse Selection \cite{1970Akerlof}, price theory \cite{Einav2012,Veiga2023}, product design \cite{Veiga2016}, competition \cite{Azevedo2017}
+        \item Adverse Selection \cite{1970Akerlof}, price theory \cite{EinavAmy,Veiga2023}, product design \cite{Veiga2016}, competition \cite{Azevedo2017}
 \vfill
 
 \item Regulation theory \cite{laffont1993theory}, public vs private options \cite{Martimort2020a,Kang2023a}.
@@ -344,7 +345,7 @@
 \vfill
 
         % \begin{itemize}
- \item Drawn from a pdf. $f(v)$ and cdf. $F(v)$ with support $[\underline{v}_t,\bar{v}_t]$. 
+\item Drawn from a pdf. $f_t(v_t)$ and cdf. $F_t(v_t)$ with support $[\underline{v}_t,\bar{v}_t]$, \boldrblue{independent across periods}: $f(\textbf{v}) = f_1(v_1)f_2(v_2)$.
             
 % \vfill
 
@@ -359,7 +360,7 @@
 
 \vfill
 
-\item Type $\textbf{v}$ consumer surplus from consuming at price profile $\textbf{p}$ is:
+\item Type $\textbf{v}$ gross payoff from consuming at price profile $\textbf{p}$ is:
 
 \begin{equation*}
  u\left(\textbf{v},\textbf{p}\right)= v_1-p_1 +  v_2-p_2
@@ -373,7 +374,7 @@
 \begin{frame}{Retailers}
 
 \begin{itemize}
-    \item We assume a set of retailers that purchase at no additional cost on the wholesale market at \boldrblue{price} $c_t$. \vfill
+    \item We assume a set of retailers that purchase on the wholesale market at \boldrblue{spot price} $c_t$, with no additional retail cost. \vfill
     \begin{itemize}
         \item We assume w.l.o.g. that $c_1 < c_2$ 
     \end{itemize}
@@ -387,7 +388,7 @@
 
     \begin{itemize}
         \item FP contract: $\textbf{p}^{r} =  (p^r,p^r)$  \vfill
-        \item Dynamic contract: $\textbf{p}^{s} =  (p_1,p_2)$
+        \item Dynamic contract\footnote{in equilibrium, the dynamic contract becomes a real-time-pricing contract}: $\textbf{p}^{s} =  (p_1,p_2)$  
     \end{itemize}
 
 \vfill
@@ -463,12 +464,11 @@
 
 \begin{itemize}
 
-\item The equilibrium prices $(\mathbf{p}^k,A^k)$ are pinned down by the zero-profit condition:
+\item The equilibrium prices $(\mathbf{p}^k,A^k)$ are pinned down by \boldrblue{free entry}: zero profit on active contracts and no profitable deviation:
 \vfill
     \begin{equation*}
         \pi^k  = \mathbf{q}^k \cdot \mathbf{p}^k  +  \mu^k A^k -  TC^k = 0
     \end{equation*}
-
  where 
 
 \begin{equation*}
@@ -497,7 +497,7 @@ $(p^r,A^r)$ maximizes its objective:
 
 \vfill
 
-\item $\lambda>0$ is the marginal cost of public funds.
+\item $\lambda>0$ is the shadow cost of public funds.
 
 \end{itemize}
 
@@ -634,23 +634,21 @@ $(p^r,A^r)$ maximizes its objective:
 
 % FP payoff labels
 \node[lab] at (6.45,0.35)
-{$u_1^{r}=[v_1-p_1]^+$\\[5pt]
-$\Pi_1^{r}=(p_1-c_1)\mathbf{1}\{v_1\geq p_1\}$};
+{$u_1^{s}=[v_1-p_1]^+$\\[5pt]
+$\Pi_1^{s}=(p_1-c_1)\mathbf{1}\{v_1\geq p_1\}$};
 
 \node[lab] at (9.75,0.35)
-{$u_2^{r}=[v_2-p_2]^+$\\[5pt]
-$\Pi_2^{r}=(p_2-c_2)\mathbf{1}\{v_2\geq p_2\}$};
+{$u_2^{s}=[v_2-p_2]^+$\\[5pt]
+$\Pi_2^{s}=(p_2-c_2)\mathbf{1}\{v_2\geq p_2\}$};
 
-% RTP payoff labels
 \node[lab] at (6.45,-2.05)
-{$u_1^{s}=[v_1-p^r]^+$\\[5pt]
-$\Pi_1^{s}=(p^r-c_1)\mathbf{1}\{v_1\geq p^r\}$};
+{$u_1^{r}=[v_1-p^r]^+$\\[5pt]
+$\Pi_1^{r}=(p^r-c_1)\mathbf{1}\{v_1\geq p^r\}$};
 
 \node[lab] at (9.75,-2.05)
-{$u_2^{s}=[v_2-p^r]^+$\\[5pt]
-$\Pi_2^{s}=(p^r-c_2)\mathbf{1}\{v_2\geq p^r\}$};
+{$u_2^{r}=[v_2-p^r]^+$\\[5pt]
+$\Pi_2^{r}=(p^r-c_2)\mathbf{1}\{v_2\geq p^r\}$};
 
-% Final utilities
 \node[lab, right=0.15cm of endfp]
 {$U^{s}=u_1^{s}+u_2^{s}-A^s$};
 
@@ -681,7 +679,7 @@ node[midway,yshift=0.45cm] {$t=2$};
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{figure/fp_demand_multi.png}
-     \caption{The canonical bundle case. $S_t$ denotes the set of consumers consuming only in period $t$, and $S_b$ in the two period. \hyperlink{EquilibriumSingle}{\beamerreturnbutton{Equilibrium}}  \hyperlink{Adverse}{\beamerreturnbutton{Adverse Selection}} }     
+     \caption{The canonical bundle case. $S_t$ denotes the set of consumers consuming only in period $t$, and $S_b$ in both periods. \hyperlink{EquilibriumSingle}{\beamerreturnbutton{Equilibrium}}  \hyperlink{Adverse}{\beamerreturnbutton{Adverse Selection}} }     
 
     \label{fig:fp_demand_multi}
 \end{figure}
@@ -718,7 +716,7 @@ node[midway,yshift=0.45cm] {$t=2$};
 \begin{itemize}
     \item $A^k =0 $
     \item  $p_1 < p^r < p_2$
-    \item $\bar{p} = \mathbb{E}[p_t]$ \vfill
+    \item $\bar{p} = \frac{1}{2}(p_1+p_2)$ \vfill
 \end{itemize}
 
 
@@ -786,8 +784,8 @@ node[midway,yshift=0.45cm] {$t=2$};
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.65\linewidth]{figure/spot_demand_multi_sb_ppt.png}
-    \caption{Downward price deviation of the fixed price with entry.}
+    \includegraphics[width=0.60\linewidth]{figure/spot_demand_multi_sb_ppt.png}
+    \caption{ The FP contract is introduced by a marginal downward deviation $p^r = p_2 - \epsilon$, with $\epsilon \geq 0$; the condition is evaluated at \boldrblue{$\epsilon = 0^+$}.}
     \label{fig:spot_demand_multi_sb_ppt}
 \end{figure}
     
@@ -805,7 +803,7 @@ The unit-price equilibrium of the RTP contract $\textbf{p}^s$ is at the marginal
 \end{proposition}
 
 \begin{proposition}
-A mixed-equilibrium contract in which consumers have a strict preference for an FP contract offered by either \boldrblue{a private firm} does not exist. 
+There is no equilibrium in which a positive mass of consumers strictly prefers an FP contract offered by \boldrblue{a private firm}.
 \end{proposition}
 
 \vfill
@@ -815,7 +813,7 @@ A mixed-equilibrium contract in which consumers have a strict preference for an 
     \item \textbf{FP contract}: Market unraveling  \vfill
 
 \begin{itemize}
-    \item \boldrblue{The demand and the average cost} of the FP contract depend on the RTP prices  which are set at $p_t=c_t$. \vfill
+    \item \boldrblue{The demand and the average cost} of the FP contract depend on the RTP prices, which are set at $p_t=c_t$. \vfill
 
 \item Then  $  \quad  \nexists p^r
     \quad \text{s.t.} \quad
@@ -840,7 +838,8 @@ A mixed-equilibrium contract in which consumers have a strict preference for an 
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\linewidth]{figure/Exemple_Private_u_ddeAC_ppt.png}
+    \includegraphics[width=0.6\linewidth]{figure/Exemple_Private_u_ddeAC_ppt.png}
+    \caption{Equilibrium with the single contract case, and market unraveling of the FP market with the RTP contract as an outside option}
 \end{figure}
     
 \end{frame}
@@ -912,7 +911,7 @@ A mixed-equilibrium contract in which consumers have a strict preference for an 
 A public firm has a strict incentive to offer a fixed price contract iff: 
 
 \begin{equation*}
-    \underbrace{\Bigg. \int_{\M^\Delta_{a,b}|_{\epsilon = 0^+}} (v_2 - p_2) f_1(p_1 ) f_2(v_2 ) dv_2\Bigg.  }_{\text{marginal benefit}} > \underbrace{\Bigg. \lambda q^r|_{\epsilon = 0^+}\Bigg. }_{\text{inframarginal cost}}  \label{con_exi_FP}
+    \underbrace{\Bigg. \int_{\M^\Delta_{a,b}|_{\epsilon = 0^+}} (v_2 - p_2) f_1(p_1 ) f_2(v_2 ) dv_2\Bigg.  }_{\text{marginal benefit}} > \underbrace{\Bigg. \lambda q_2^r(p_2)|_{\epsilon = 0^+}\Bigg. }_{\text{inframarginal cost}}  \label{con_exi_FP}
 \end{equation*}
 
 \end{proposition}
@@ -968,7 +967,7 @@ The difference in \boldrblue{marginal quantity responses} between $A^r$ and $p^r
 The \boldrblue{consumer surplus  of contract switchers}: 
 
 \begin{align*}
-\partial_{p^r}\mathcal{C} :=  - \overbrace{\frac{\partial \phi(v_1)}{\partial p^r} \int_{\M^\Delta_{a}} (\phi(v_1) - p^r-A^r) f_1(v_1) f_2(\phi(v_1))dv_1}^{\text{sorting effect \#1}}  \\
+\partial_{p^r}\mathcal{C} :=  - \overbrace{\frac{\partial \phi}{\partial p^r} \int_{\M^\Delta_{a}} (\phi(v_1) - p^r-A^r) f_1(v_1) f_2(\phi(v_1))dv_1}^{\text{sorting effect \#1}}  \\
 - \underbrace{\frac{\partial v_2^\Delta}{\partial p^r} \int_{\M^\Delta_b} ( v_2^\Delta - p^r-A^r) f_1(v_1) f_2(v_2^\Delta) dv_1}_{\text{sorting effect \#2}}    
 \end{align*}
 
@@ -988,7 +987,7 @@ If an interior equilibrium with $p^r<\overline{p}$ exists, the unit price $p^r$ 
 \vspace{0.25 cm}
 
 \begin{equation*}
-p^r_{\ast \ast}
+p^r_{\ast}
 \;=\;
 \underbrace{\sum_{t} c_t\,\frac{\delta_{A}(q_t^r)}{\delta_{A}(q^r)}}_{\text{marginal cost}} \; + \; \text{Two-part Ramsey term}
 \;-\;
@@ -1002,7 +1001,7 @@ If an interior equilibrium with $p^r>\overline{p}$ exists, the unit price $p^r$ 
 \vspace{0.25 cm}
 
 \[
-p^r_{\ast \ast} \;=\; c_2  \; + \;
+p^r_{\ast} \;=\; c_2  \; + \;
 \text{Two-part Ramsey term}
 \;-\;
 \underbrace{\frac{1}{1+\lambda}\,\frac{\partial_{p^r}\mathcal{C}}{\partial_{p^r}(q^r_2)}}_{\text{sorting correction}}.
@@ -1045,12 +1044,13 @@ p^r_{\ast \ast} \;=\; c_2  \; + \;
     \begin{itemize}
         \item We show that the \boldrblue{welfare can be ambiguous}. \vfill
         \item This is notably due to having \boldrblue{a lower fixed-price} compared to the single contract case. \vfill
+        \item The following can be realized: \vfill
     \end{itemize}
 
 
 
 \begin{center}
-    W(\textcolor{blue}{Dynamic}: $p_t = c_t$ +  \textcolor{red}{Fixed-Price}: $p^r=p^r_{\ast \ast}$)  { \textbf{  < }} $W$( \textcolor{red}{Fixed-Price}: $p_{fp}^r$)
+    W(\textcolor{blue}{Dynamic}: $p_t = c_t$ +  \textcolor{red}{Fixed-Price}: $p^r=p^r_{\ast}$)  { \textbf{  < }} $W$( \textcolor{red}{Fixed-Price}: $p_{fp}^r$)
 \end{center}
 
 \vfill
@@ -1070,6 +1070,7 @@ Where $p_{fp}^r$ is the equilibrium price set by the public firm in the single c
 \begin{figure}
     \centering
     \includegraphics[width=0.95\linewidth]{figure/example_equ1_u.png}
+    \caption{Consumer sorting in equilibrium under the single-contract and two-contract environments.}
 \end{figure}
     
 \end{frame}
@@ -1082,7 +1083,7 @@ Where $p_{fp}^r$ is the equilibrium price set by the public firm in the single c
 
 \small 
 
-Change in deadweight loss between the two equilibrium
+Change in deadweight loss between the two equilibria
 
 \vfill
 \[
@@ -1115,7 +1116,7 @@ Change in deadweight loss between the two equilibrium
 \begin{figure}
     \centering
     \includegraphics[width=0.9\linewidth]{figure/example_equ0_PublicFund_u.png}
-        \caption{$W = CS + \Pi$.}
+    \caption{Equilibria under the single- and two-contract environments. Left panel: prices. Right panel: welfare. In the two-contract environment, the public firm uses either a two-part tariff or a linear price.}
 \end{figure}
     
 \end{frame}
@@ -1143,18 +1144,25 @@ Change in deadweight loss between the two equilibrium
 \begin{frame}{Conclusion}
 
 \begin{itemize}
-    \item The paper provides a novel framework describing the self-selection of electricity contracts by heterogeneous consumers.\vfill
-    \item We show that the coexistence of a public option with a private sector and self-selection from consumers can lead to low welfare due to adverse selection. \vfill
-    \item Going beyond the impossibility result: How to make the curves cross?  \vfill
+    \item A \boldrblue{selection model} for retail electricity: can adverse selection arise when consumers choose their own contract? \vfill
+
+    \item Self-selection yields two results: \vfill
     \begin{itemize}
-        \item Different selection pattern: risk aversion. \vfill
-        \item Barrier to selection: $p^r > AC(p^r)$. \vfill
-        \item Lower retail cost: $\overline{AC}(p^r)<AC(p^r)$.
+        \item \boldrblue{Private firms}: impossibility, the FP market unravels. \vfill
+        \item \boldrblue{Public firm}: the FP survives, but adverse selection lowers welfare. \vfill
     \end{itemize}
-    \vfill 
-    \item Sophisticated firms: price discrimination $\approx$ public firm? 
+
+    \item \boldrblue{Beyond impossibility}: when can a private FP contract break even (make the curves cross)? \vfill
+    \begin{itemize}
+        \item A different selection pattern, e.g.\ risk aversion. \vfill
+        \item A barrier to selection, $p^r > AC^r(p^r)$. \vfill
+        \item A retail cost advantage, $\overline{AC}^r(p^r) < AC^r(p^r)$. \vfill
+    \end{itemize}
+
+\item \boldrblue{Looking ahead}: with \boldrblue{sophisticated firms}, can price discrimination make a private firm weigh marginal vs.\ inframarginal consumers like the public firm - price discrimination $\approx$ public firm?
+
 \end{itemize}
-    
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1189,7 +1197,7 @@ Change in deadweight loss between the two equilibrium
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{figure/Demand_PR_unique.png}
-    \caption{Demand is in line with the intuitions: decreasing for the FP and increasing for RTP.         \hyperlink{demand1}{\beamerreturnbutton{Go Back}}}
+    \caption{Demand is in line with intuition: decreasing for the FP and increasing for RTP.         \hyperlink{demand1}{\beamerreturnbutton{Go Back}}}
     \label{fig:Demand_PR}
     
 
@@ -1355,7 +1363,7 @@ For $\alpha < 1$, there always exists an equilibrium $(p^r,\tau)$ such that some
 \underbrace{\sum_{t} c_t\,\frac{\delta_{\tau}(q_t^r)}{\delta_{\tau}(q^r)}}_{\text{marginal cost}} \;  = \; (1-\alpha)\underbrace{\Bigg. \frac{\lambda}{1+\lambda} \frac{q^r}{\delta_{\tau}(q^r)}\Bigg.}_{\text{Ramsey}}  \; - \;   \underbrace{\Bigg. \frac{1}{1+\lambda} \frac{\delta_\tau(\mathcal{C})}{\delta_\tau(q^r)} \Bigg.}_{\text{sorting correction}} \; - \;   \underbrace{ \Bigg. \frac{T}{\delta_{\tau}(q^r)}  \Bigg.}_{\text{levy effect}}  
 \end{equation*}
 
-where $T = q^s + t^s \delta_{\tau}(q^s)$
+where $T = q^s + \tau^s \delta_{\tau}(q^s)$, $P^r = p^r + \tau^r$
 
 \end{proposition}
 
